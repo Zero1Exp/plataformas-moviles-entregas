@@ -1,0 +1,60 @@
+* {
+    font-family: Arial;
+    color: white;
+}
+
+.cabecera {
+    background-color: transparent;
+    padding: 3px;
+    color: white;
+    margin: -8px;
+}
+
+.cabecera h1 {
+    text-align: center;
+    margin-top: 22px;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.6) url(img/persona.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#info {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#menu {
+    padding: 7px;
+    margin-bottom: 30px;
+    margin-top: 65px;
+    text-align: center;
+}
+
+#menu a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 2px 1px 0;
+    border-bottom: 1px;
+    background-color: transparent;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    line-height: 2.5;
+    box-shadow: -1px -1px 8px 2px teal;
+}
+
+.pie {
+    background-color: transparent;
+    padding: 2px;
+    margin: -8px;
+    margin-top: 100px;
+    color:white;
+    text-align: center;
+}
