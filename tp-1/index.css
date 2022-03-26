@@ -1,0 +1,35 @@
+#izquierda{
+    font-family: "times new roman";
+    float: left;
+    padding:  10px;
+    width: 70%;
+}
+
+#izquierda img {
+    float: left;
+    padding: 8px;
+}
+
+#lista {
+    border: solid grey 1px;
+    padding: 10px;
+    width: 150px;
+    background-color: whitesmoke;
+}
+
+#derecha {
+    float: right;
+    margin-top: 27px;
+    margin-right: 40px;
+    padding: 10px;
+    border: solid blue 1px;
+}
+
+#derecha img {
+    width: 250px;
+}
+
+#derecha h1 {
+    padding: 5px;
+    background-color: lightblue;
+}
