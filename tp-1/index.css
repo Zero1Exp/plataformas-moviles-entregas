@@ -1,8 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.article h1{
+    margin-left: 35px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+body h1, h2 {
+    font-family: "Linux Libertine";
+    src: url("/static/fonts/linux-libertine/LinLibertine_RB.woff") format("woff");
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
 #izquierda{
     font-family: "times new roman";
     float: left;
     padding:  10px;
-    width: 70%;
+    width: 65%;
+    margin-left: 25px;
 }
 
 #izquierda img {
@@ -11,17 +39,19 @@
 }
 
 #lista {
+    margin: 10px;
     border: solid grey 1px;
     padding: 10px;
     width: 150px;
-    background-color: whitesmoke;
+    background-color: whitesmoke; 
 }
 
 #derecha {
     float: right;
+    margin: 5px;
     margin-top: 27px;
     margin-right: 40px;
-    padding: 10px;
+    padding: 15px;
     border: solid blue 1px;
 }
 
@@ -31,5 +61,6 @@
 
 #derecha h1 {
     padding: 5px;
+    margin-top: -3px;
     background-color: lightblue;
 }
