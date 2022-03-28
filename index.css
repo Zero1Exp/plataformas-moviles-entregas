@@ -40,11 +40,11 @@ body {
     outline: none;
     text-decoration: none;
     color: white;
-    padding: 2px 1px 0;
+    padding: 2px 5px 0;
     border-bottom: 1px;
     background-color: transparent;
     display: inline-block;
-    width: 19.5%;
+    width: max-content;
     margin-right: 0.625%;
     line-height: 2.5;
     box-shadow: -1px -1px 8px 2px teal;
