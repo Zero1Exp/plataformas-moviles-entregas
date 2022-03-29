@@ -50,6 +50,14 @@ body {
     box-shadow: -1px -1px 8px 2px teal;
 }
 
+#menu a:hover{
+    color: teal;
+    background-color: rgba(19, 15, 15, 0.61);
+    width: 395px;
+    line-height: 3.0;
+    border-radius: 5px 5px 5px 5px;
+}
+
 .pie {
     background-color: transparent;
     padding: 2px;
