@@ -44,7 +44,7 @@ body {
     border-bottom: 1px;
     background-color: transparent;
     display: inline-block;
-    width: max-content;
+    width: 380px;
     margin-right: 0.625%;
     line-height: 2.5;
     box-shadow: -1px -1px 8px 2px teal;
