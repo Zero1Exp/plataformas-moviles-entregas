@@ -1,6 +1,16 @@
 * {
     font-family: Arial;
     color: white;
+
+}
+
+body {
+    background: rgba(0, 0, 0, 0.6) url(img/persona.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
 .cabecera {
@@ -13,15 +23,14 @@
 .cabecera h1 {
     text-align: center;
     margin-top: 22px;
+    font-size: 2.5rem;
+    animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
+    text-shadow: 3px 2px 2px teal, 0px -1px 3px rgba(12, 143, 251, 0.75),-3px 0px 2px rgba(12, 143, 251, 0.75);
 }
 
-body {
-    background: rgba(0, 0, 0, 0.6) url(img/persona.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-blend-mode: darken;
+.cabecera h1::after {
+    font-size: 1.75rem;
+    content: " - Entregas";
 }
 
 #info {
@@ -34,6 +43,7 @@ body {
     margin-bottom: 30px;
     margin-top: 65px;
     text-align: center;
+    margin-right: 25px;
 }
 
 #menu a {
@@ -44,18 +54,41 @@ body {
     border-bottom: 1px;
     background-color: transparent;
     display: inline-block;
-    width: 380px;
+    width: 400px;
     margin-right: 0.625%;
     line-height: 2.5;
     box-shadow: -1px -1px 8px 2px teal;
 }
 
 #menu a:hover{
-    color: teal;
+    color: white;
+    box-shadow: -1px -1px 8px 2px turquoise;
     background-color: rgba(19, 15, 15, 0.61);
-    width: 395px;
+    text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 143, 251, 0.75),-3px 0px 2px rgba(12, 143, 251, 0.75);
+    width: 410px;
     line-height: 3.0;
     border-radius: 5px 5px 5px 5px;
+}
+
+.container {
+    list-style: none;
+}
+
+.container li a {
+    cursor: pointer;
+    animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
+    text-shadow: 3px 2px 2px teal, 0px -1px 3px rgba(12, 143, 251, 0.75),-3px 0px 2px rgba(12, 143, 251, 0.75);
+    text-decoration: none;
+}
+
+.container li:hover a::after {
+    font-size: 1.25rem;
+    content: " <<";
+}
+
+.container li:hover a::before {
+    font-size: 1.25rem;
+    content: ">> ";
 }
 
 .pie {
@@ -65,4 +98,17 @@ body {
     margin-top: 100px;
     color:white;
     text-align: center;
+}
+
+@keyframes pulse { 
+    0%{ opacity:.9;transform: skewX(.5deg);}
+    25%{ opacity:1;}
+    50%{opacity:.9;}
+    75%{ opacity:1; transform:skewX(.5deg);}
+    100%{opacity:.9;}
+}
+
+@keyframes chromaticMove { 
+    0%{text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 79, 251,0.75),0px 0px -2px rgba(12, 143, 251, 0.75);}
+    50%{text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 79, 251,0.75),-3px 2px 3px rgba(12, 143, 251, 0.75);}
 }

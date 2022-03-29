@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +10,39 @@
 <body>
     <header>
         <div class="cabecera">
-            <h1>Inicio</h1>
+            <h1>Reyes Tobias</h1>
         </div>
     </header>
     <div id="info">
         <p><b>Trabajos de la materia Plataformas Moviles del año 2022</b></p>
     </div>
     <div id="menu">
-        <h2><a href="tp-1/index.html" target="_blank">Trabajo N°1 | Html y GitHub</a></h2>
-        <h2><a href="tp-2/index.html" target="_blank">Trabajo N°2 | Proximamente</a></h2>
+        <ul class="container" id="container">
+            <li><h2><a href="tp-1/index.html" target="_blank">Trabajo N°1 | Html y GitHub</a></h2></li>
+            <li><h2><a id="proxi" href="">Trabajo N°2 | Proximamente</a></h2></li>
+        </ul>
+    </div>
+    <div>
+        <script>
+            document.getElementById('proxi').onclick = function(){
+        alert('Proximamente...'); }
+        </script>
+        <script>
+            let easterEggKey = "zero"
+            let currInput = ""
+            document.addEventListener(("keypress"), (ev) => {
+                currInput += ev.key
+
+                if(
+                    currInput === easterEggKey) {
+                        alert("Te gustan los huevos de pascuas? Bueno pues aqui no hay")
+                    }
+
+                    if(currInput.length >= easterEggKey) {
+                        currInput = ""
+                    }
+                })
+        </script>
     </div>
     <footer class="pie">
         <h4>Pagina hecha por</h4>
