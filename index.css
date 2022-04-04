@@ -1,5 +1,5 @@
 * {
-    font-family: Arial;
+    font-family: Helvetica;
     color: white;
 
 }
@@ -43,7 +43,6 @@ body {
     margin-bottom: 30px;
     margin-top: 65px;
     text-align: center;
-    margin-right: 30px;
 }
 
 #menu a {
@@ -55,7 +54,6 @@ body {
     background-color: transparent;
     display: inline-block;
     width: 400px;
-    margin-right: 0.625%;
     line-height: 2.5;
     box-shadow: -1px -1px 8px 2px teal;
 }
@@ -70,23 +68,18 @@ body {
     border-radius: 5px 5px 5px 5px;
 }
 
-.container {
-    list-style: none;
-}
-
-.container li a {
+#menu a {
     cursor: pointer;
     animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
-    text-shadow: 3px 2px 2px teal, 0px -1px 3px rgba(12, 143, 251, 0.75),-3px 0px 2px rgba(12, 143, 251, 0.75);
     text-decoration: none;
 }
 
-.container li:hover a::after {
+#menu h2:hover a::after {
     font-size: 1.25rem;
     content: " <<";
 }
 
-.container li:hover a::before {
+#menu h2:hover a::before {
     font-size: 1.25rem;
     content: ">> ";
 }
