@@ -28,6 +28,10 @@ a:visited {
     color: gray;
 }
 
+a:not([href]) {
+    font-style: italic;
+}
+
 strong {
     border-bottom: 1px solid white;
 }
