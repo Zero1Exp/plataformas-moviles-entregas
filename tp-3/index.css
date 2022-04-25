@@ -34,7 +34,9 @@
     p {
         font-size: 1.3em;
     }
+}
 
+@media (min-width: 400px) {
     .container {
         width: 390px;
     }
