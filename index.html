@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Reyes Tobias - Trabajos P.M.2022</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
         <div class="cabecera">
@@ -17,14 +19,16 @@
         <p><b>Trabajos de la materia Plataformas Moviles del año 2022</b></p>
     </div>
     <div id="menu">
-            <h2><a href="tp-1/index.html" target="_blank">Trabajo N°1 | Html y GitHub</a></h2>
-            <h2><a href="tp-2/index.html" target="_blank">Trabajo N°2 | Selectores Css</a></h2>
-            <h2><a id="proxi" href="">Trabajo N°3 | Proximamente</a></h2>
+        <h2 id="t1"><a href="tp-1/index.html" target="_blank">Trabajo N°1</a></h2>
+        <h2 id="t2"><a href="tp-2/index.html" target="_blank">Trabajo N°2</a></h2>
+        <h2 id="t3"><a href="tp-3/index.html" target="_blank">Trabajo N°3</a></h2>
+        <h2 id="t4"><a id="proxi" href="">Trabajo N°4</a></h2>
     </div>
     <div>
         <script>
-            document.getElementById('proxi').onclick = function(){
-        alert('Proximamente...'); }
+            document.getElementById('proxi').onclick = function () {
+                alert('Proximamente...');
+            }
         </script>
         <script>
             let easterEggKey = "zero"
@@ -32,15 +36,15 @@
             document.addEventListener(("keypress"), (ev) => {
                 currInput += ev.key
 
-                if(
+                if (
                     currInput === easterEggKey) {
-                        alert("Te gustan los huevos de pascuas? Bueno pues aqui no hay")
-                    }
+                    alert("Te gustan los huevos de pascuas? Bueno pues aqui no hay")
+                }
 
-                    if(currInput.length >= easterEggKey) {
-                        currInput = ""
-                    }
-                })
+                if (currInput.length >= easterEggKey) {
+                    currInput = ""
+                }
+            })
         </script>
     </div>
     <footer class="pie">
@@ -48,4 +52,5 @@
         <h4>Reyes Tobias</h4>
     </footer>
 </body>
+
 </html>

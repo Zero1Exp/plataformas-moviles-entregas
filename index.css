@@ -24,8 +24,8 @@ body {
     text-align: center;
     margin-top: 22px;
     font-size: 2.5rem;
-    animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
-    text-shadow: 3px 2px 2px teal, 0px -1px 3px rgba(12, 143, 251, 0.75),-3px 0px 2px rgba(12, 143, 251, 0.75);
+    animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
+    text-shadow: 3px 2px 2px teal, 0px -1px 3px rgba(12, 143, 251, 0.75), -3px 0px 2px rgba(12, 143, 251, 0.75);
 }
 
 .cabecera h1::after {
@@ -45,6 +45,22 @@ body {
     text-align: center;
 }
 
+#menu #t1:hover ::after {
+    content: " - HTML y GitHub";
+}
+
+#menu #t2:hover ::after {
+    content: " - Selectores Css";
+}
+
+#menu #t3:hover ::after {
+    content: " - Media Queries";
+}
+
+#menu #t4:hover ::after {
+    content: " - Proximamente...";
+}
+
 #menu a {
     outline: none;
     text-decoration: none;
@@ -58,25 +74,20 @@ body {
     box-shadow: -1px -1px 8px 2px teal;
 }
 
-#menu a:hover{
+#menu a:hover {
     color: white;
     box-shadow: -1px -1px 8px 2px turquoise;
     background-color: rgba(19, 15, 15, 0.61);
-    text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 143, 251, 0.75),-3px 0px 2px rgba(12, 143, 251, 0.75);
-    width: 410px;
+    text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 143, 251, 0.75), -3px 0px 2px rgba(12, 143, 251, 0.75);
+    width: 415px;
     line-height: 3.0;
     border-radius: 5px 5px 5px 5px;
 }
 
 #menu a {
     cursor: pointer;
-    animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
+    animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
     text-decoration: none;
-}
-
-#menu h2:hover a::after {
-    font-size: 1.25rem;
-    content: " <<";
 }
 
 #menu h2:hover a::before {
@@ -89,19 +100,40 @@ body {
     padding: 2px;
     margin: -8px;
     margin-top: 100px;
-    color:white;
+    color: white;
     text-align: center;
 }
 
-@keyframes pulse { 
-    0%{ opacity:.9;transform: skewX(.5deg);}
-    25%{ opacity:1;}
-    50%{opacity:.9;}
-    75%{ opacity:1; transform:skewX(.5deg);}
-    100%{opacity:.9;}
+@keyframes pulse {
+    0% {
+        opacity: .9;
+        transform: skewX(.5deg);
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .9;
+    }
+
+    75% {
+        opacity: 1;
+        transform: skewX(.5deg);
+    }
+
+    100% {
+        opacity: .9;
+    }
 }
 
-@keyframes chromaticMove { 
-    0%{text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 79, 251,0.75),0px 0px -2px rgba(12, 143, 251, 0.75);}
-    50%{text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 79, 251,0.75),-3px 2px 3px rgba(12, 143, 251, 0.75);}
+@keyframes chromaticMove {
+    0% {
+        text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 79, 251, 0.75), 0px 0px -2px rgba(12, 143, 251, 0.75);
+    }
+
+    50% {
+        text-shadow: 3px 2px 2px turquoise, 0px -1px 3px rgba(12, 79, 251, 0.75), -3px 2px 3px rgba(12, 143, 251, 0.75);
+    }
 }
