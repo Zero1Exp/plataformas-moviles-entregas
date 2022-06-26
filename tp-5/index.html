@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP5 - Pantallas Responsivas Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!------------------- NAVBAR ------------------->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/Mordred.gif" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Reyes Tobias
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Algo1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Algo2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Algo3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------- CARDS ------------------->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 m-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/Audi Quattro S4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Audi Quattro S1</h5>
+              <p class="card-text">El Sport Quattro S1, también conocido como Sport Quattro E2 fue la última evolución del Quattro. 
+                Compitió en 1985 y 1986 pero solo lograría una victoria en San Remo de 1985. Tras la prohibición de los Grupo B en 
+                1986, el Quattro fue jubilado de la competición y Audi siguió compitiendo pero con otros vehículos como el Audi 200.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/Lancia Delta S4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lancia Delta S4</h5>
+              <p class="card-text">El Lancia Delta S4 es un automóvil de carreras construido por la empresa italiana Lancia en 
+                conjunto con Abarth,5​ homologado como grupo B y pensado para competir en el Campeonato Mundial de Rally. Se 
+                desarrolló en 1984 a partir del modelo del Lancia Delta, comercializado por primera vez en 1979, y participó tan 
+                solo en las temporadas 1985 y 1986 del Campeonato Mundial de Rally.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/Peugeot 205 t16.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Peugeot 205 T16</h5>
+              <p class="card-text">El Peugeot 205 Turbo 16, es un automóvil de carreras construido por la empresa francesa Peugeot 
+                homologado como grupo B y pensado para competir en el Campeonato Mundial de Rally. Se desarrolló en 1982 y fue 
+                utilizado por equipo oficial de la marca, el Peugeot Talbot Sport entre 1984 y 1986 con el que consiguió: dieciséis 
+                victorias, dos títulos de marcas y dos de pilotos entre 1985 y 1986 con Timo Salonen y Juha Kankkunen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/Lancia Rally 037.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lancia Rally 037</h5>
+              <p class="card-text">En 1.982 Lancia presentó el 037, el sustituto del exitoso Lancia Stratos, adaptándose así al 
+                cambio de normativa previsto para 1.983 y convirtiéndose en el primer coche homologado para el Grupo B. Fue 
+                desarrollado por Abarth tomando como base el Lancia Beta Montecarlo de motor central que tantos éxitos estaba 
+                cosechando en los circuitos.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br><hr><br>
+
+    <!------------------- FORM ------------------->
+    <form class="p-5 w-100">
+        <div class="form-group row mb-3">
+            <label for="inputName" class="col-lg-2 col-form-label">Nombre</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label for="inputEmail3" class="col-lg-2 col-form-label">Email</label>
+            <div class="col-lg-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label for="messageInput" class="col-lg-2 col-form-label">Mensaje</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" placeholder="Deja tu comentario" id="messageInput"
+                    style="height: 100px"></textarea>
+            </div>
+        </div>
+        <div class="form-group row mt-4">
+            <div class="col-6 offset-lg-2 col-lg-5">
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </div>
+            <div class="col-6 col-lg-5">
+                <button type="reset" class="btn btn-secondary w-100">Cancel</button>
+            </div>
+        </div>
+    </form>
+    <br><hr><br>
+
+    <!------------------- CARRUSEL ------------------->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Group C 1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Group C 2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Group C 3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><hr><br>
+
+    <!------------------- ARTICLE -------------------->
+    <article class="w-100 p-5 text-center">
+        <h1 class="text-capitalize">Grupo C</h1>
+            <p class="text-muted">Le mans 1982</p>
+            <p class="mt-4" style="text-align: justify;">
+                El origen de la categoría del Grupo C se encuentra en los Grupos 6 de la FIA, y sobre todo en la categoría GTP 
+                creada por la ACO para las 24 Horas de Le Mans a mediados de los años 70. La GTP era una categoría destinada a 
+                prototipos con una serie de limitaciones de tamaño pero, en lugar de las tradicionales limitaciones en la cilindrada,
+                establecía límites en el consumo, la FIA aplicó ese mismo concepto en el Grupo C, eso limitaba a los autos a un peso
+                mínimo de 800kg y una capacidad máxima de combustible de 100 litros. Con los competidores restringidos a cinco paradas 
+                de recarga de combustible con 1000km de distancia, los autos se les permitieron efectivamente 600 litros por 1000km. 
+                Con esto la FIA pretendía evitar que los constructores se concentraran solo en el desarrollo del motor, como a finales 
+                de la década de los años 1970, cuando algunos fabricantes, como Porsche, Ford y Lancia, habían dominado las carreras 
+                simplemente incrementando la presión de soplado del turbocompresor, especialmente durante la fase de clasificación 
+                (por ejemplo, el Porsche 935 de 3.2 L fue capaz de alcanzar la marca de los 800 CV). Los motores tena que ser de 
+                fabricantes reconocidos que tuvieran autos homologados en el Grupo A de autos de turismos o del Grupo B con coches de 
+                Gran Turismo.
+            </p>
+    </article>
+    <br><br>
+
+
+    <!------------------- FOOTER ------------------->
+<footer class="bg-dark text-center text-lg-start text-white">
+      <div class="container p-4">
+        <div class="row mt-4">
+            <div class="col-6 col-sm-6 offset-sm-3 col-lg-4 offset-lg-0 mb-4 mb-sm-0">
+               Texto 1 Texto 1 Texto 1 Texto 1 Texto 1 Texto 1
+            </div>
+            <div class="w-100 d-sm-none"></div>
+            <div class="col-6 col-sm-4 offset-sm-0 col-lg-4 offset-lg-0 mb-4 mb-sm-0">
+                Texto 2 Texto 2 Texto 2 Texto 2 Texto 2 Texto 2
+            </div>
+            <div class="w-100 d-sm-none"></div>
+            <div class="col-6 col-sm-4 offset-sm-4 col-lg-4 offset-lg-0 mb-4 mb-sm-0">
+                Texto 3 Texto 3 Texto 3 Texto 3 Texto 3 Texto 3
+            </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

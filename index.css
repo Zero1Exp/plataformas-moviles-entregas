@@ -62,6 +62,10 @@ body {
 }
 
 #menu #t5:hover ::after {
+    content: " - Pantalla Responsiva";
+}
+
+#menu #t6:hover ::after {
     content: " - Proximamente...";
 }
 
@@ -92,11 +96,6 @@ body {
     cursor: pointer;
     animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
     text-decoration: none;
-}
-
-#menu h2:hover a::before {
-    font-size: 1.25rem;
-    content: ">> ";
 }
 
 .pie {
