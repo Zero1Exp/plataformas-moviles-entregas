@@ -66,6 +66,10 @@ body {
 }
 
 #menu #t6:hover ::after {
+    content: " - Funciones";
+}
+
+#menu #t7:hover ::after {
     content: " - Proximamente...";
 }
 
